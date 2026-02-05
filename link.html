@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Farmer Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background video */
+#bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* Human video animation */
+#human{
+    position:absolute;
+    bottom:0;
+    left:-200px;
+    width:200px;
+    animation: walk 12s linear infinite;
+    z-index:1;
+}
+
+@keyframes walk{
+    0%{left:-200px;}
+    50%{left:70%;}
+    100%{left:-200px;}
+}
+
+/* Overlay */
+.overlay{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Login box */
+.login{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:15px;
+    text-align:center;
+    z-index:2;
+}
+
+h2{
+    color:#2f6f1e;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#3c8d2f;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background -->
+<video autoplay muted loop id="bg">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<!-- REAL HUMAN -->
+<video autoplay muted loop id="human">
+    <source src="human.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+    <div class="login">
+        <h2>Farmer Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Farmer Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1d976c,#93f9b9);
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    background:#145a32;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    font-size:26px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li{
+    cursor:pointer;
+    font-weight:500;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:40px 20px;
+    color:white;
+}
+
+header h2{
+    font-size:36px;
+}
+
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* CARD SECTION */
+.container{
+    padding:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+    text-align:center;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.02);
+}
+
+.card h3{
+    margin:15px 0;
+    color:#1e8449;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+}
+
+.icon{
+    font-size:50px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right,#f39c12,#f1c40f);
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:linear-gradient(to right,#f1c40f,#f39c12);
+}
+
+/* FOOTER */
+footer{
+    background:#0b5345;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>🌾 Farmer System</h1>
+    <ul>
+        <li>Home</li>
+        <li>Farmers</li>
+        <li>Crops</li>
+        <li>Reports</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<header>
+    <h2>Farmer Management System</h2>
+    <p>Digital solution for modern agriculture</p>
+</header>
+
+<div class="container">
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">👨‍🌾</div>
+            <h3>Farmer Details</h3>
+            <p>Store farmer profile, land details and contact information.</p>
+            <a href="http://127.0.0.1:5501/link.html">
+                <button class="btn">Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>Crop Management</h3>
+            <p>Manage crop types, seasons, yields and health records.</p>
+            <a href="http://127.0.0.1:5501/crop.html">
+                <button class="btn">Open</button>
+            </a>
+        </div>
+
+        <!-- ✅ MARKET PRICES LINK ADDED -->
+        <div class="card">
+            <div class="icon">💰</div>
+            <h3>Market Prices</h3>
+            <p>View crop market prices and selling opportunities.</p>
+            <a href="http://127.0.0.1:5501/price.html">
+                <button class="btn">Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📦</div>
+            <h3>Storage</h3>
+            <p>Manage warehouse and crop storage availability.</p>
+            <button class="btn">Open</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Reports</h3>
+            <p>Generate reports for production and income analysis.</p>
+            <button class="btn">Open</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Farmer Management System
+</footer>
+
+</body>
+</html>
+
+------------------------------------------------- 
