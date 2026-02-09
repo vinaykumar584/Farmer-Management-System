@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Farmer Management System</title>
 
 <style>
@@ -17,7 +18,7 @@ body{
     min-height:100vh;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 nav{
     background:#145a32;
     color:white;
@@ -34,18 +35,23 @@ nav h1{
 nav ul{
     list-style:none;
     display:flex;
-    gap:20px;
+    gap:25px;
 }
 
 nav ul li{
     cursor:pointer;
     font-weight:500;
+    transition:0.3s;
 }
 
-/* HEADER */
+nav ul li:hover{
+    color:#f1c40f;
+}
+
+/* ================= HEADER ================= */
 header{
     text-align:center;
-    padding:40px 20px;
+    padding:45px 20px;
     color:white;
 }
 
@@ -58,7 +64,7 @@ header p{
     margin-top:10px;
 }
 
-/* CARD SECTION */
+/* ================= CARD SECTION ================= */
 .container{
     padding:40px;
 }
@@ -79,7 +85,7 @@ header p{
 }
 
 .card:hover{
-    transform:translateY(-12px) scale(1.02);
+    transform:translateY(-12px) scale(1.03);
 }
 
 .card h3{
@@ -90,44 +96,50 @@ header p{
 .card p{
     color:#555;
     font-size:15px;
+    line-height:1.5;
 }
 
 .icon{
-    font-size:50px;
+    font-size:52px;
 }
 
+/* ================= BUTTON ================= */
 .btn{
     margin-top:20px;
-    padding:12px 25px;
+    padding:12px 28px;
     border:none;
     border-radius:30px;
     background:linear-gradient(to right,#f39c12,#f1c40f);
     color:black;
     font-weight:bold;
     cursor:pointer;
+    transition:0.3s;
 }
 
 .btn:hover{
     background:linear-gradient(to right,#f1c40f,#f39c12);
+    transform:scale(1.08);
 }
 
-/* FOOTER */
+a{
+    text-decoration:none;
+}
+
+/* ================= FOOTER ================= */
 footer{
     background:#0b5345;
     color:white;
     text-align:center;
     padding:15px;
-    margin-top:40px;
-}
-
-a{
-    text-decoration:none;
+    margin-top:50px;
+    font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <h1>🌾 Farmer System</h1>
     <ul>
@@ -139,18 +151,20 @@ a{
     </ul>
 </nav>
 
+<!-- HEADER -->
 <header>
     <h2>Farmer Management System</h2>
     <p>Digital solution for modern agriculture</p>
 </header>
 
+<!-- CARDS -->
 <div class="container">
     <div class="cards">
 
         <div class="card">
             <div class="icon">👨‍🌾</div>
             <h3>Farmer Details</h3>
-            <p>Store farmer profile, land details and contact information.</p>
+            <p>Store farmer profiles, land details and contact information.</p>
             <a href="link.html">
                 <button class="btn">Open</button>
             </a>
@@ -165,7 +179,6 @@ a{
             </a>
         </div>
 
-        <!-- ✅ MARKET PRICES LINK ADDED -->
         <div class="card">
             <div class="icon">💰</div>
             <h3>Market Prices</h3>
@@ -179,24 +192,27 @@ a{
             <div class="icon">📦</div>
             <h3>Storage</h3>
             <p>Manage warehouse and crop storage availability.</p>
-            <button class="btn">Open</button>
+            <button class="btn" onclick="alert('🚧 Storage module under development')">
+                Open
+            </button>
         </div>
 
         <div class="card">
             <div class="icon">📊</div>
             <h3>Reports</h3>
             <p>Generate reports for production and income analysis.</p>
-            <button class="btn">Open</button>
+            <button class="btn" onclick="alert('🚧 Reports module under development')">
+                Open
+            </button>
         </div>
 
     </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
     © 2026 Farmer Management System
 </footer>
 
 </body>
 </html>
-
-------------------------------------------------- 
